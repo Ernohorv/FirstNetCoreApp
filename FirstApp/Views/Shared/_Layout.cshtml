@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>First app</title>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="~/css/site.css" />
+
+</head>
+
+<body>
+
+    <div id="sidebar">
+        <ul class="menu">
+            <li><a asp-controller="App" asp-action="Index">Home</a></li>
+        </ul>
+
+        <span id="name">Erno Horvath</span>
+
+    <div id="wrapper">
+        </div>
+
+        <div>
+            @RenderBody()
+        </div>
+    </div>
+
+    <script type="text/javascript" src="~/lib/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="js/site.js" ></script>
+</body>
+</html>
